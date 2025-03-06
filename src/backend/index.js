@@ -7,7 +7,7 @@ const db = require("./connection");
 const response = require("./response");
 app.use(bodyParser.json());
 app.use(cors());
-
+app.options("*", cors());
 // Routes
 app.get("/mahasiswa", (req, res) => {
   const sql = "SELECT * FROM mahasiswa";
