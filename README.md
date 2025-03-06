@@ -33,7 +33,7 @@
    ```
    bun/npm run server
    ```
-### 6. Run database by using application XAMPPP, make sure to turned on apache & mySQL
+### 6. Run database by using application XAMPP, make sure to turned on apache & mySQL
    ![Screenshot 2025-03-07 012148](https://github.com/user-attachments/assets/e689fd44-5753-485f-9fa1-d4d7e85b5f90)
       <br/>   <br/>
 ### 7. Click admin button that aligning with MySQL, this will open phpMyAdmin
