@@ -86,7 +86,14 @@ Note : NIM must UNIQUE
 See following image:
 ![image](https://github.com/user-attachments/assets/f5558249-5960-494a-bfb1-9c61d3f13c2d)
 
-### 15. Lastly see the result from frontend!
+### 15. Don't forget to change database name in connection.js!
+<br><br>
+<h2>src/backend/connection.js</h4>
+
+
+![image](https://github.com/user-attachments/assets/2925ca08-26d8-489b-a387-641738502bc7)
+
+### 16. Lastly see the result from frontend!
 ![image](https://github.com/user-attachments/assets/7fa51e78-7720-4741-ac18-9ef4895f24b0)
 
 
