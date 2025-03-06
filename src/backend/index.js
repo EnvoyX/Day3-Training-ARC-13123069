@@ -1,18 +1,14 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const cors = require("cors");
 const bodyParser = require(`body-parser`);
 const db = require("./connection");
 const response = require("./response");
 app.use(bodyParser.json());
+app.use(cors());
 
 // Routes
-app.get("/", (req, res) => {
-  response(200, "API Express.js ready to run", "SUCCESS!", res);
-});
-app.get("/data", (req, res) => {
-  res.status(200).json("this is json stuff");
-});
 app.get("/mahasiswa", (req, res) => {
   const sql = "SELECT * FROM mahasiswa";
   db.query(sql, (err, fields) => {
@@ -21,10 +17,6 @@ app.get("/mahasiswa", (req, res) => {
     response(200, "get mahasiswa list", fields, res);
   });
 });
-// app.get("/mahasiswa/:id", (req, res) => {
-//   const id = req.params.id;
-//   res.send(`specific student with id: ${id}`);
-// });
 app.get("/mahasiswa/:nim", (req, res) => {
   const nim = req.params.nim;
   const sql = `SELECT * FROM mahasiswa WHERE nim = ${nim}`;
@@ -35,7 +27,7 @@ app.get("/mahasiswa/:nim", (req, res) => {
   });
 });
 
-app.post("/mahasiswa", (req, res) => {
+app.post("/mahasiswa/add", (req, res) => {
   const { nim, nama, jurusan, universitas } = req.body;
   const sql = `INSERT INTO mahasiswa (nim, nama, jurusan, universitas) VALUES (${nim}, '${nama}', '${jurusan}', '${universitas}')`;
   db.query(sql, (err, fields) => {
@@ -56,7 +48,7 @@ app.post("/mahasiswa", (req, res) => {
   });
 });
 
-app.put("/mahasiswa", (req, res) => {
+app.put("/mahasiswa/update", (req, res) => {
   const { nim, nama, jurusan, universitas } = req.body;
   const sql = `UPDATE mahasiswa SET nama = '${nama}' , jurusan = '${jurusan}', universitas = '${universitas}' WHERE nim = ${nim}`;
   db.query(sql, (err, fields) => {
@@ -75,7 +67,7 @@ app.put("/mahasiswa", (req, res) => {
   });
 });
 
-app.delete("/mahasiswa", (req, res) => {
+app.delete("/mahasiswa/delete", (req, res) => {
   const { nim } = req.body;
   const sql = `DELETE FROM mahasiswa WHERE nim = ${nim}`;
   db.query(sql, (err, fields) => {
