@@ -60,7 +60,7 @@
      <br> <br>
 ### 12. This should be our database structure:
    ![Screenshot 2025-03-07 014920](https://github.com/user-attachments/assets/51ef3c65-74f2-49d4-a1c2-fbe8454cc027)
-### 13. Create first field and click "go":
+### 13. Under "Insert" tab, Create first field and click "go":
   ![image](https://github.com/user-attachments/assets/bbeaff60-f100-4b71-82d7-f9d41793cea2)
 
 ### 14. Add more data to POSTMAN
