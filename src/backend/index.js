@@ -6,7 +6,7 @@ const bodyParser = require(`body-parser`);
 const db = require("./connection");
 const response = require("./response");
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({ credentials: true, origin: true }));
 app.options("*", cors());
 // Routes
 app.get("/mahasiswa", (req, res) => {
