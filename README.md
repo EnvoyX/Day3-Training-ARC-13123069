@@ -28,7 +28,8 @@
    ```
    npm i
    ```
-### 4. Run frontend by using Live Server (Five Server) or Live Preview extension in Visual Studio Code
+### 4. Run frontend by using Live Server (Five Server) or Live Preview extension in Visual Studio Code (Make Sure localhost is other than 3000)
+
 ### 5. Run backend by
    ```
    npm run server
@@ -44,7 +45,6 @@
   ![image](https://github.com/user-attachments/assets/a27b60c0-90c3-445d-8724-a90b7c2d6138)
    <br> <br> <br>
   ![image](https://github.com/user-attachments/assets/33b93b2f-0947-4eea-b252-66f8a72e2920)
-
 
 ### 9. Create new table "mahasiswa" & set 5 columns
   ![image](https://github.com/user-attachments/assets/cb1bd375-74d3-4889-a708-baed6c800f11)
@@ -63,7 +63,14 @@
 ### 13. Under "Insert" tab, Create first field and click "go":
   ![image](https://github.com/user-attachments/assets/bbeaff60-f100-4b71-82d7-f9d41793cea2)
 
-### 14. Add more data to POSTMAN
+### 14. Don't forget to change database name in connection.js!
+<br><br>
+<h2>src/backend/connection.js</h4>
+
+
+![image](https://github.com/user-attachments/assets/2925ca08-26d8-489b-a387-641738502bc7)
+
+### 15. Add more data to POSTMAN
 Now, go to Postman 
 <br> <br> <br>
 Make sure to select POST and this url
@@ -86,12 +93,7 @@ Note : NIM must UNIQUE
 See following image:
 ![image](https://github.com/user-attachments/assets/f5558249-5960-494a-bfb1-9c61d3f13c2d)
 
-### 15. Don't forget to change database name in connection.js!
-<br><br>
-<h2>src/backend/connection.js</h4>
 
-
-![image](https://github.com/user-attachments/assets/2925ca08-26d8-489b-a387-641738502bc7)
 
 ### 16. Lastly see the result from frontend!
 ![image](https://github.com/user-attachments/assets/7fa51e78-7720-4741-ac18-9ef4895f24b0)
