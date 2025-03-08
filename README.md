@@ -28,7 +28,7 @@
    ```
    npm i
    ```
-### 4. Run frontend by using Live Server (Five Server) or Live preview extension in Visual Studio Code
+### 4. Run frontend by using Live Server (Five Server) or Live Preview extension in Visual Studio Code
 ### 5. Run backend by
    ```
    npm run server
