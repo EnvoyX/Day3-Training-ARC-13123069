@@ -46,7 +46,7 @@
   ![image](https://github.com/user-attachments/assets/33b93b2f-0947-4eea-b252-66f8a72e2920)
 
 
-### 9. Create new table "mahasiswa"
+### 9. Create new table "mahasiswa" & 5 column
   ![image](https://github.com/user-attachments/assets/cb1bd375-74d3-4889-a708-baed6c800f11)
 ### 10. Set these fields by following image 
   ![image](https://github.com/user-attachments/assets/a6e3c525-7b50-4001-9de9-2888b802e7fa)
