@@ -8,6 +8,13 @@ const response = require("./response");
 app.use(bodyParser.json());
 app.use(cors({ credentials: true, origin: true }));
 app.options("*", cors());
+
+app.all("/*", function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+});
+
 // Routes
 app.get("/mahasiswa", (req, res) => {
   const sql = "SELECT * FROM mahasiswa";
